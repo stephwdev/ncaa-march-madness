@@ -18,7 +18,7 @@
 		<?php  
 
         //This function says hello!
-        echo "<h1> Hello </h1>";
+        echo "<h1> 2015 NCAA Tournament </h1>";
 
 
 		?>
