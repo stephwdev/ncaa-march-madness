@@ -7,9 +7,6 @@ function Navigation(){
 $activePage = basename($_SERVER['PHP_SELF']);
 $rows = file('includes/navigation.txt');
 
-
-
-
 echo "<ul class='nav'>";
 
 foreach ($rows as $row) {
@@ -17,9 +14,7 @@ $nav = explode(":", $row);
 $page = trim($nav[0]);
 $link = trim($nav[1]);
 
-
 if($link  == $activePage) {
-
 
 echo "<li class='activeLink'><a href='{$link}'>" . $page . "</a></li>";
 
@@ -30,19 +25,11 @@ echo "<li class='activeLink'><a href='{$link}'>" . $page . "</a></li>";
 
 }
 
-
-
-
 }
 
 echo "</ul>";
 
-
-
 }
-
-
-
 
 function getTitle(){
 
@@ -60,22 +47,11 @@ echo $page;
 
 } else {
 
-
-
-}
-
-
-
 }
 
 }
 
-
-
-
-
-
-
+}
 
 ?>
 
