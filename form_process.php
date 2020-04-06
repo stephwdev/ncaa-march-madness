@@ -24,7 +24,7 @@ if(isset($_POST['submit'])) {
 
     if(!in_array($username,$name)) {
 
-        echo " Sorry you are not allowed";
+        echo "Sorry you do not have access to this page.";
 
     } else {
 
