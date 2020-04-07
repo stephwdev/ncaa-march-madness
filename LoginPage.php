@@ -19,22 +19,22 @@
 
         echo "<h1> Admin Login Page </h1>";
 
-        if(isset($_POST['submit'])) {
-
-            $name = array("toya", "chelsea", "steph");
-            $username = $_POST['username'];
-            $password = $_POST['password'];
-
-            if(!in_array($username,$name)) {
-
-                echo " Sorry you are not allowed";
-
-            } else {
-
-                echo "Welcome";
-            }
-
-        }
+//        if(isset($_POST['submit'])) {
+//
+//            $name = array("toya", "chelsea", "steph");
+//            $username = $_POST['username'];
+//            $password = $_POST['password'];
+//
+//            if(!in_array($username,$name)) {
+//
+//                echo " Sorry you are not allowed";
+//
+//            } else {
+//
+//                echo "Welcome";
+//            }
+//
+//        }
 
 
 		?>

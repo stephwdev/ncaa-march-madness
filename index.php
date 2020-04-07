@@ -3,7 +3,7 @@
 
 	<section class="content">
 
-		<aside class="col-sm-4">
+		<aside class="col-xs-4">
 		
 		<?php Navigation();?>
 			

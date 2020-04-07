@@ -1,5 +1,6 @@
 <?php include "functions.php"; ?>
 <?php include "includes/header.php";?>
+<?php include "classes.php"; ?>
 
 
 
@@ -18,18 +19,38 @@
 
 if(isset($_POST['submit'])) {
 
-    $name = array("toya", "chelsea", "steph");
+//    $name = array("toya", "chelsea", "steph");
     $username = $_POST['username'];
     $password = $_POST['password'];
 
-    if(!in_array($username,$name)) {
+    $db = new MyDB();
 
-        echo "Sorry you do not have access to this page.";
+    if($db != SQLITE3_NULL) {
+        echo "Connection!";
 
     } else {
-
-        echo "Welcome. You are now logged in. <br>";
+        echo "Not connected.";
     }
+
+    //Need to update this section to read the DB for this info
+//    $query = "INSERT INTO Admin(Username,Password) ";
+//    $query .= "VALUES ('$username', '$password')";
+//
+//    $result = $db->query($query);
+//    if (!$result) {
+//        die("QUERY FAILED");
+//    }
+
+
+
+//    if(!in_array($username,$name)) {
+//
+//        echo "Sorry you do not have access to this page.";
+//
+//    } else {
+//
+//        echo "Welcome. You are now logged in. <br>";
+//    }
 
 }
 

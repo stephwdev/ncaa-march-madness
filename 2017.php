@@ -23,7 +23,7 @@
 
 		?>
 
-	
+     <img src="images/bracket.png" width="700" height=500">
 
 		</article><!--MAIN CONTENT-->
 

@@ -11,7 +11,7 @@
 	</aside><!--SIDEBAR-->
 
 
-<article class="main-content col-xs-8">
+<article class="main-content col-md-8">
 		
 
 
@@ -20,8 +20,9 @@
         //This function says hello!
         echo "<h2> 2015 NCAA Tournament Bracket </h2>";
 
-
 		?>
+
+        <img src="images/bracket.png" width="700" height=500">
 
 	
 
