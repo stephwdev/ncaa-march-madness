@@ -22,7 +22,15 @@
 
 		?>
 
+    <div class="bracket">
         <img src="images/bracket.png" width="700" height=500">
+        <div class="bottom-left">Bottom Left</div>
+        <div class="top-left">Top Left</div>
+        <div class="top-right">Top Right</div>
+        <div class="bottom-right">Bottom Right</div>
+        <div class="centered">Centered</div>
+    </div>
+    <a href="2016.php"><?php echo "Hello";?></a>
 
 	
 
