@@ -12,16 +12,16 @@
 
 
 <article class="main-content col-sm-8">
-		
 
 
-		<?php  
 
-        //This function says hello!
-        echo "<h2> 2019 NCAA Tournament Bracket </h2>";
+    <?php
+
+    //This function says hello!
+    echo "<h2> 2019 NCAA Tournament Bracket </h2>";
 
 
-		?>
+    ?>
 
     <img src="images/bracket.png" width="700" height=500">
 

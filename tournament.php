@@ -1,6 +1,5 @@
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
-<link rel="stylesheet" href="css/style.css">
-<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<link rel="stylesheet" href="css/tournament.css">
+
 
 <main id="tournament">
     <ul class="round round-1">
