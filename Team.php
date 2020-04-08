@@ -39,7 +39,9 @@
 
                 <th>Team ID</th>
                 <th>Team Stats</th>
+                <th>Coach Name</th>
                 <th>City</th>
+                <th>State</th>
             </tr>
 
             <tr>
@@ -48,11 +50,11 @@
                 $id = $_GET['id'];
 
 
-                $results = $db->query('SELECT * FROM Teams WHERE TeamID = {$id}');
+                $results = $db->query('SELECT * FROM Teams WHERE TeamID ='. $id);
 
                 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                     echo "<tr>";
-                    echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[City]</td><br>";
+                    echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[CoachName]</td><td>$row[City]</td><td>$row[State]</td><br>";
                     echo "</tr>";
                 }
 
