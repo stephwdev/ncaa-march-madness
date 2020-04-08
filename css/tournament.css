@@ -32,11 +32,6 @@ ul {
     padding: 8px;
 }
 
-#stats td, #stats th {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
 #stats tr:nth-child(even){bacground-color: #f2f2f2;}
 
 #stats tr:hover {background-color: #ddd;}
