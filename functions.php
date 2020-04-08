@@ -1,4 +1,6 @@
-<?php 
+<?php
+
+include "includes/db.php";
 
 
 function Navigation(){
@@ -40,6 +42,10 @@ function getTitle(){
 }
 
 function insertIntoTable() {
+
+}
+
+function getSeeds($season, $division) {
 
 }
 
