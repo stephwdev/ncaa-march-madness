@@ -1,6 +1,10 @@
 <link rel="stylesheet" href="css/tournament.css">
 <?php include "functions.php"; ?>
 <?php include "includes/db.php"; ?>
+<?php
+    print_r($_GET);
+
+?>
 
 <head>
     <meta charset="utf-8">
@@ -21,6 +25,7 @@
         <h2 id="headline">Team Stats</h2>
 
 
+
     </div>
 </header>
 
@@ -28,8 +33,10 @@
     <div class="container">
 
 
+
         <table id="stats">
             <tr>
+
                 <th>Team ID</th>
                 <th>Team Stats</th>
                 <th>City</th>
@@ -37,9 +44,11 @@
 
             <tr>
              <?php
+//                $name = $_GET('name');
+                $id = $_GET['id'];
 
 
-                $results = $db->query('SELECT * FROM Teams');
+                $results = $db->query('SELECT * FROM Teams WHERE TeamID = {$id}');
 
                 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                     echo "<tr>";

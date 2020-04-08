@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/tournament.css">
 <?php include "functions.php"; ?>
-<?php //include "includes/header.php";?>
+
 
 <head>
     <meta charset="utf-8">
@@ -30,7 +30,7 @@
             <div class="round round-one current">
                 <div class="round-details">Round 1<br/> </div>
                 <ul class="matchup">
-                    <li class="team team-top"><a href="https://www.facebook.com/">1 Kentucky</a><span class="score">76</span></li>
+                    <li class="team team-top"><a href="Team.php?id=1101">1 Kentucky</a><span class="score">76</span></li>
                     <li class="team team-bottom">16 Hampton<span class="score">82</span></li>
                 </ul>
                 <ul class="matchup">

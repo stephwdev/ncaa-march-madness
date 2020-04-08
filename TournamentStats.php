@@ -18,7 +18,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Player Stats</h2>
+        <h2 id="headline">TStats</h2>
 
 
     </div>
@@ -30,20 +30,20 @@
 
         <table id="stats">
             <tr>
-                <th>Player ID</th>
-                <th>Player Name</th>
-                <th>City</th>
+                <th>Season</th>
+                <th>TeamID</th>
+                <th>Seed</th>
             </tr>
 
             <tr>
              <?php
 
 
-                $results = $db->query('SELECT * FROM Player');
+                $results = $db->query('SELECT * FROM Tournament WHERE Season = 2015 ');
 
                 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                     echo "<tr>";
-                    echo "<td>$row[PlayerID]</td><td>$row[PlayerName]</td>";
+                    echo "<td>$row[Season]</td><td>$row[TeamID]</td><td>$row[Seed]</td><br>";
                     echo "</tr>";
                 }
 
