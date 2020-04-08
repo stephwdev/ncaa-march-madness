@@ -27,6 +27,23 @@ ul {
 
 }
 
+#stats {
+    border: 1px solid;
+    padding: 8px;
+}
+
+#stats tr:nth-child(even){bacground-color: #f2f2f2;}
+
+#stats tr:hover {background-color: #ddd;}
+
+#stats th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2C7399;
+    color: white;
+}
+
 .main-content {
     min-height: 240px;
     /*min-width: 750px;*/
@@ -107,6 +124,7 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://picjumbo.com/
 .share-icon {font-size: 24px; color: #fff;padding: 25px;}
 .share-wrap {max-width: 1100px; text-align: center; margin: 60px auto;}
 .final {margin: 4.5em 0;}
+
 
 @-webkit-keyframes pulse {
     0% {
