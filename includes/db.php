@@ -15,6 +15,5 @@ if(!$db) {
 
 }
 
-$query = "SELECT * FROM Tournament WHERE Season = '$dummy'"
 
 ?>

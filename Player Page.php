@@ -39,11 +39,11 @@
              <?php
 
 
-                $results = $db->query('SELECT * FROM Teams');
+                $results = $db->query('SELECT * FROM Players');
 
                 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                     echo "<tr>";
-                    echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[City]</td><br>";
+                    echo "<td>$row[PlayerID]</td><td>$row[FirstName]</td><td>$row[City]</td><br>";
                     echo "</tr>";
                 }
 

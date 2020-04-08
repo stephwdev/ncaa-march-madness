@@ -11,6 +11,10 @@ body {
 /*background-color: #cecece;*/
 }
 
+nav {
+ display: block;
+}
+
 .nav li {
 box-shadow: 0px 2px 4px 1px;
 }
