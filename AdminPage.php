@@ -18,7 +18,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Welcome!</h2>
+        <h2 id="headline">Admin Page</h2>
 
 
 
@@ -26,37 +26,26 @@
 </header>
 
 <section id="bracket">
-    <div class="index">
+    <div class="main-content">
 
 
-        <h2 class="text-muted">How this site works</h2><br>
+        <?php
 
-        <h3>This site is mainly used to gain information about the NCAA tournaments of the past. We're hoping that this will help you with building your bracket in the future!</h3><br>
+        $username = $_POST['username'];
+        $password = $_POST['password'];
 
-        <p><a href="2015.php">2015</a></p>
-        <p><a href="2016.php">2016</a></p>
-        <p><a href="2017.php">2017</a></p>
-        <p><a href="2018.php">2018</a></p>
-        <p><a href="2019.php">2019</a></p>
-        <p><a href="LoginPage.php">Admin Login</a></p>
+        
 
-
+        ?>>
 
 
     </div>
 </section>
 
-<section class="share">
-
-    <div class="share-wrap">
-
-    </div>
-</section>
 </body>
 
+<footer>
+    <div class = "share-wrap share">
 
-			
-			
-
-
-
+    </div>
+</footer>

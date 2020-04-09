@@ -1,56 +1,54 @@
+<link rel="stylesheet" href="css/tournament.css">
 <?php include "functions.php"; ?>
-<?php include "includes/header.php";?>
-
-	<section class="content">
-
-	<aside class="col-xs-4">
-
-	<?php Navigation();?>
-			
-			
-	</aside><!--SIDEBAR-->
 
 
-<article class="main-content col-xs-8">
-		
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Holtwood+One+SC' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script|Herr+Von+Muellerhoff' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
+
+    <title>NCAA Tournament Bracket</title>
+</head>
+<body>
+<header class="hero">
+    <div class="hero-wrap">
+
+        <h2 id="headline">Login Page</h2>
 
 
-		<?php  
 
-        echo "<h1> Admin Login Page </h1>";
+    </div>
+</header>
 
-//        if(isset($_POST['submit'])) {
-//
-//            $name = array("toya", "chelsea", "steph");
-//            $username = $_POST['username'];
-//            $password = $_POST['password'];
-//
-//            if(!in_array($username,$name)) {
-//
-//                echo " Sorry you are not allowed";
-//
-//            } else {
-//
-//                echo "Welcome";
-//            }
-//
-//        }
+<section id="bracket">
+    <div class="index">
 
 
-		?>
+        <form action="AdminPage.php" method="post">
 
-    <form action="form_process.php" method="post">
+            <label for="username">Username</label>
+            <input type = "text" name = "username"><br>
+            <label for="password">Password</label>
+            <input type = "password" name = "password"><br>
+            <input type = "submit" name="submit">
 
-        <label for="username">Username</label>
-        <input type = "text" name = "username"><br>
-        <label for="password">Password</label>
-        <input type = "password" name = "password"><br>
-        <input type = "submit" name="submit">
+        </form>
 
-    </form>
 
-	
+    </div>
+</section>
 
-		</article><!--MAIN CONTENT-->
+</body>
 
-<?php include "includes/footer.php"; ?>
+<footer>
+    <div class = "share-wrap share">
+
+    </div>
+</footer>
+
+

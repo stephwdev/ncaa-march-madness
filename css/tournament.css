@@ -45,10 +45,21 @@ ul {
 }
 
 input[type=text] {
-    width: 100%;
-    padding: 12px 20 px;
+    width: 150px;
+    padding: 12px 12px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+input[type=password] {
+    width: 150px;
+    padding: 12px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+form {
+    position: center;
 }
 
 
@@ -133,6 +144,7 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://picjumbo.com/
 .share-icon {font-size: 24px; color: #fff;padding: 25px;}
 .share-wrap {max-width: 1100px; text-align: center; margin: 60px auto;}
 .final {margin: 4.5em 0;}
+.index {margin:0; height: inherit; padding: 100px;vertical-align: center;text-align: center;font-size: medium;}
 
 
 @-webkit-keyframes pulse {
