@@ -67,8 +67,11 @@ function insertPlayer($db)
 		echo $firstname;
 		echo $teamid;
 
-		$query = "INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ('$playerid', '$lastname', '$firstname', '$teamid') 
-					UPDATE Player SET LastName = '$lastname', FirstName = '$firstname', TeamID = '$teamid' WHERE PlayerID ='$playerid'";
+//		$stmt = $db->prepare("INSERT INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES (?, ?, ?,?)");
+//		$stmt->bind_param($playerid, $lastname , $firstname, $teamid);
+//		$stmt->execute();
+
+		$query = "INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ({$playerid}, {$lastname}, {$firstname}, {$teamid})";
 
 		$db->exec($query);
 
