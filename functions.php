@@ -67,13 +67,18 @@ function insertPlayer($db)
 		echo $firstname;
 		echo $teamid;
 
-//		$stmt = $db->prepare("INSERT INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES (?, ?, ?,?)");
-//		$stmt->bind_param($playerid, $lastname , $firstname, $teamid);
-//		$stmt->execute();
+		$stmt = $db->prepare("INSERT INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES (:playerID, :lastName, :firstName,:teamID)");
 
-		$query = "INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ({$playerid}, {$lastname}, {$firstname}, {$teamid})";
+		$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
+		$stmt->bindValue('lastName', $lastname);
+		$stmt->bindValue('firstName', $firstname);
+		$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+		$stmt->execute();
 
-		$db->exec($query);
+//		$query = "INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ($playerid, '$lastname', '$firstname', $teamid)";
+//		echo $query;
+//
+//		$db->exec("INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ($playerid, '$lastname', '$firstname', $teamid)");
 
 }
 
