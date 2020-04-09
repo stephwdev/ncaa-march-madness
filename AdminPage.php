@@ -26,7 +26,7 @@
 </header>
 
 <section id="bracket">
-    <div class="main-content">
+    <div class="index">
 
 
         <?php
@@ -34,9 +34,23 @@
         $username = $_POST['username'];
         $password = $_POST['password'];
 
-        
+//        $stmt = $db->prepare("SELECT Username FROM Users WHERE Username = :username");
+//
+//        $stmt->bindValue(':username', $username);
+//        $results = $stmt->execute();
+//
+//        $row = $results->fetchArray(SQLITE3_ASSOC);
+//
+//        echo "{$row[0]}";
 
-        ?>>
+        echo "<div class = 'button'><a href = Form_Template.php>Insert Player Form</a></div>";
+
+
+
+
+
+
+        ?>
 
 
     </div>
