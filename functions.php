@@ -41,9 +41,6 @@ function getTitle(){
 	}
 }
 
-function insertIntoTable() {
-
-}
 
 function getSeeds($season,  $db) {
 
@@ -57,7 +54,32 @@ function getSeeds($season,  $db) {
 	}
 }
 
+function insertPlayer($db)
+{
+
+		$playerid = $_POST['playerid'];
+		$lastname = $_POST['lastname'];
+		$firstname = $_POST['firstname'];
+		$teamid = $_POST['teamid'];
+
+		echo $playerid;
+		echo $lastname;
+		echo $firstname;
+		echo $teamid;
+
+		$query = "INSERT INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES (" . $playerid . "," . strval($lastname) . "," . strval($firstname) . "," . $teamid . ")";
+
+		$db->exec($query);
+
+}
+
+function insertTeam($db) {
+
+	$teamid = $_POST['teamid'];
+	$teamname = $_POST['teamname'];
+
+	echo $teamid;
+	echo $teamname;
+}
+
 ?>
-
-
-
