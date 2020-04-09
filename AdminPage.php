@@ -43,8 +43,6 @@
 //
 //        echo "{$row[0]}";
 
-        echo "<div class = 'button'><a href = Form_Template.php>Insert Player Form</a></div>";
-
 
 
 
@@ -52,6 +50,18 @@
 
         ?>
 
+
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Player Form</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Team Form</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Games</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Edit Stats</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Delete</a><br></p>
 
     </div>
 </section>
