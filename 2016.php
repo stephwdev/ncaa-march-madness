@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="css/tournament.css">
 <?php include "functions.php"; ?>
-<?php //include "includes/header.php";?>
+
 
 <head>
     <meta charset="utf-8">
