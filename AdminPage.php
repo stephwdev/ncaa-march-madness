@@ -43,8 +43,11 @@
 //
 //        echo "{$row[0]}";
 
+<<<<<<< HEAD
         echo "<div class = 'button'><a href = Player_Amendments.php>Player Amendment Form</a></div>";
 
+=======
+>>>>>>> 7e917ab6c52d3b7ffe558b7650eff1fb4e70446a
 
 
 
@@ -52,6 +55,18 @@
 
         ?>
 
+
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Player Form</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Team Form</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Games</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Edit Stats</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Add New Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = 'Form_Template.php' class = 'button'>Delete</a><br></p>
 
     </div>
 </section>

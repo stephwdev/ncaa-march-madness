@@ -118,6 +118,10 @@ form {
 
 }
 
+p {
+    maring: 10px 20px 30px 40px;
+}
+
 
 
 /*
@@ -156,7 +160,7 @@ body {font-family: 'Istok Web', sans-serif;background: url("http://picjumbo.com/
 .share-icon {font-size: 24px; color: #fff;padding: 25px;}
 .share-wrap {max-width: 1100px; text-align: center; margin: 60px auto;}
 .final {margin: 4.5em 0;}
-.index {margin:0; height: inherit; padding: 100px;vertical-align: center;text-align: center;font-size: medium;}
+.index {margin:0; height: inherit; padding: 10px;vertical-align: center;text-align: center;font-size: medium;}
 
 
 @-webkit-keyframes pulse {
