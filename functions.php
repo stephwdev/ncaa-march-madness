@@ -56,18 +56,13 @@ function getSeeds($season,  $db) {
 
 function insertPlayer($db)
 {
-
 		$playerid = $_POST['playerid'];
 		$lastname = $_POST['lastname'];
 		$firstname = $_POST['firstname'];
 		$teamid = $_POST['teamid'];
 
-		echo $playerid;
-		echo $lastname;
-		echo $firstname;
-		echo $teamid;
 
-		$stmt = $db->prepare("INSERT INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES (:playerID, :lastName, :firstName,:teamID)");
+		$stmt = $db->prepare("INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES (:playerID, :lastName, :firstName,:teamID)");
 
 		$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
 		$stmt->bindValue('lastName', $lastname);
@@ -75,20 +70,93 @@ function insertPlayer($db)
 		$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
 		$stmt->execute();
 
-//		$query = "INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ($playerid, '$lastname', '$firstname', $teamid)";
-//		echo $query;
-//
-//		$db->exec("INSERT OR IGNORE INTO Player (PlayerID, LastName, FirstName, TeamID) VALUES ($playerid, '$lastname', '$firstname', $teamid)");
-
+		echo "Player Successfully Inserted";
 }
 
-function insertTeam($db) {
+function updatePlayer($db)
+{
+	$playerid = $_POST['playerid'];
+	$lastname = $_POST['lastname'];
+	$firstname = $_POST['firstname'];
+	$teamid = $_POST['teamid'];
 
+	$stmt = $db->prepare("UPDATE Player SET LastName = :lastName, FirstName = :firstName, TeamID = :teamID WHERE PlayerID = :playerID");
+
+	$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
+	$stmt->bindValue('lastName', $lastname);
+	$stmt->bindValue('firstName', $firstname);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->execute();
+
+	echo "Player Successfully Updated";
+}
+
+function deletePlayer($db)
+{
+	$playerid = $_POST['playerid'];
+
+	$stmt = $db->prepare("DELETE FROM Player WHERE PlayerID = :playerID");
+
+	$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
+
+	$stmt->execute();
+
+	echo "Player Successfully Removed";
+}
+
+function insertTeam($db)
+{
 	$teamid = $_POST['teamid'];
 	$teamname = $_POST['teamname'];
+	$coachname = $_POST['coachname'];
+	$city = $_POST['city'];
+	$state = $_POST['state'];
 
-	echo $teamid;
-	echo $teamname;
+
+	$stmt = $db->prepare("INSERT OR IGNORE INTO Teams (TeamID, TeamName, CoachName, City, State) VALUES (:teamID, :teamName, :coachName, :city, :state)");
+
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->bindValue('teamName', $teamname);
+	$stmt->bindValue('coachName', $coachname);
+	$stmt->bindValue('city', $city);
+	$stmt->bindValue('state', $state);
+	$stmt->execute();
+
+	echo "Team Successfully Inserted";
+}
+
+function updateTeam($db)
+{
+	$teamid = $_POST['teamid'];
+	$teamname = $_POST['teamname'];
+	$coachname = $_POST['coachname'];
+	$city = $_POST['city'];
+	$state = $_POST['state'];
+
+
+	$stmt = $db->prepare("UPDATE Teams SET TeamName = :teamName, CoachName = :coachName, City = :city, State = :state WHERE TeamID = :teamID)");
+
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->bindValue('teamName', $teamname);
+	$stmt->bindValue('coachName', $coachname);
+	$stmt->bindValue('city', $city);
+	$stmt->bindValue('state', $state);
+	$stmt->execute();
+
+	echo "Team Successfully Updated";
+}
+
+function deleteTeam($db)
+{
+	$teamid = $_POST['teamid'];
+
+	$stmt = $db->prepare("DELETE FROM Teams WHERE TeamID = :teamID");
+
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+
+	$stmt->execute();
+
+	echo "Team Successfully Removed";
 }
 
 ?>

@@ -43,7 +43,7 @@
 //
 //        echo "{$row[0]}";
 
-        echo "<div class = 'button'><a href = Form_Template.php>Insert Player Form</a></div>";
+        echo "<div class = 'button'><a href = Player_Amendments.php>Player Amendment Form</a></div>";
 
 
 

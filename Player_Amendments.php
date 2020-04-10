@@ -18,7 +18,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Team Stats</h2>
+        <h2 id="headline">Table Amendment Form</h2>
 
     </div>
 </header>
@@ -26,35 +26,29 @@
 <section id="bracket">
     <div class="container">
 
-<?php
+        <div class="round round-two current">
+            <div class="round-details">Player Amendments<br/></div>
 
-if(isset($_POST['submit'])) {
+            <form action="form_process.php?form=insertPlayer" method="post">
 
-    if($_GET['form'] == 'insertPlayer') {
-        if ($_POST['submit'] == 'Insert') {
-            insertPlayer($db);
-        } elseif ($_POST['submit'] == 'Update') {
-             updatePlayer($db);
-        } elseif ($_POST['submit'] == 'Delete'){
-            deletePlayer($db);
-        }
+                <label for="playerid">PlayerID</label>
+                <input type = "text" name = "playerid"><br>
+                <label for="lastname">LastName</label>
+                <input type = "text" name = "lastname"><br>
+                <label for="firstname">FirstName</label>
+                <input type = "text" name = "firstname"><br>
+                <label for="teamid">TeamID</label>
+                <input type = "text" name = "teamid"><br>
 
-    }
-    elseif ($_GET['form'] == 'insertTeam') {
-         if ($_POST['submit'] == 'Insert'){
-             insertTeam($db);
-         } elseif ($_POST['submit'] == 'Update'){
-             updateTeam($db);
-         } elseif ($_POST['submit'] == 'Delete'){
-             deleteTeam($db);
-         }
-    }
+                <input type="submit" name="submit" value="Insert">
+                <input type="submit" name="submit" value="Delete">
+                <input type="submit" name="submit" value="Update">
 
-}
+            </form>
 
-?>
+        </div>
 
-
+        </div>
 
     </div>
 </section>

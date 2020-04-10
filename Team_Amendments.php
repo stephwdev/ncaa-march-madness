@@ -18,9 +18,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Insert Form</h2>
-
-
+        <h2 id="headline">Table Amendment Form</h2>
 
     </div>
 </header>
@@ -29,48 +27,30 @@
     <div class="container">
 
         <div class="round round-two current">
-            <div class="round-details">Insert Player<br/></div>
-
-            <form action="form_process.php?form=insertPlayer" method="post">
-
-                <label for="playerid">PlayerID</label>
-                <input type = "text" name = "playerid"><br>
-                <label for="lastname">LastName</label>
-                <input type = "text" name = "lastname"><br>
-                <label for="firstname">FirstName</label>
-                <input type = "text" name = "firstname"><br>
-                <label for="teamid">TeamID</label>
-                <input type = "text" name = "teamid"><br>
-
-                <input type = "submit" name="submit">
-
-            </form>
-
-            <div class="round-details">Insert Team<br/></div>
+            <div class="round-details">Team Amendments<br/></div>
 
             <form action="form_process.php?form=insertTeam" method="post">
 
-                <label for="playerid">TeamID</label>
-                <input type = "text" name = "teamid"><br>
-                <label for="lastname">TeamName</label>
-                <input type = "text" name = "lastname"><br>
-                <label for="firstname">FirstName</label>
-                <input type = "text" name = "firstname"><br>
                 <label for="teamid">TeamID</label>
                 <input type = "text" name = "teamid"><br>
+                <label for="teamname">TeamName</label>
+                <input type = "text" name = "teamname"><br>
+                <label for="coachname">CoachName</label>
+                <input type = "text" name = "coachname"><br>
+                <label for="city">City</label>
+                <input type = "text" name = "city"><br>
+                <label for="state">State</label>
+                <input type = "text" name = "state"><br>
 
-                <input type = "submit" name="submit">
+                <input type="submit" name="submit" value="Insert">
+                <input type="submit" name="submit" value="Delete">
+                <input type="submit" name="submit" value="Update">
 
             </form>
 
-        </div>
-
-
-
-
+            </div>
 
         </div>
-
 
     </div>
 </section>
