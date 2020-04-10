@@ -33,16 +33,17 @@ $playerID = $_GET['id'];
 <section id="bracket">
     <div class="container">
 
-        <?php
+        <div class="round-details"><?php
 
-        $nameResults = $db->query('SELECT * FROM Player WHERE PlayerID=' .$playerID);
-        while ($row = $nameResults->fetchArray(SQLITE3_ASSOC)) {
-            echo "<h3>Player Name: {$row[FirstName]} {$row[LastName]}</h3>";
-        }
+            $nameResults = $db->query('SELECT * FROM Player WHERE PlayerID=' .$playerID);
+            while ($row = $nameResults->fetchArray(SQLITE3_ASSOC)) {
+                echo "<h3>Player Name: {$row[FirstName]} {$row[LastName]}</h3>";
+            }
 
-        ?>
+            ?><br/> </div>
 
-        <table id="stats">
+        <ul class="matchup">
+            <table id="stats">
             <tr>
 
                 <th>Season</th>
@@ -75,6 +76,7 @@ $playerID = $_GET['id'];
                 ?>
             </tr>
         </table>
+        </ul>
 
 
 
