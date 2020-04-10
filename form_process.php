@@ -67,8 +67,15 @@ if(isset($_POST['submit'])) {
             deleteTournament($db);
          }
     }
-}
-
+    elseif ($_GET['form'] == 'insertPlayerStat') {
+         if ($_POST['submit'] == 'Insert') {
+            insertPlayerStat($db);
+         } elseif ($_POST['submit'] == 'Update') {
+            updatePlayerStat($db);
+         } elseif ($_POST['submit'] == 'Delete') {
+            deletePlayerStat($db);
+}        }
+    }
 ?>
 
 

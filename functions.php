@@ -277,4 +277,87 @@ function deleteTournament($db)
 	echo "Tournament Successfully Removed";
 }
 
+function insertPlayerStat($db)
+{
+	$playerid = $_POST['playerid'];
+	$season = $_POST['season'];
+	$ast = $_POST['ast'];
+	$blk = $_POST['blk'];
+	$foul = $_POST['foul'];
+	$reb = $_POST['reb'];
+	$stl = $_POST['stl'];
+	$tover = $_POST['tover'];
+	$fgm = $_POST['fgm'];
+	$fga = $_POST['fga'];
+	$ftm = $_POST['ftm'];
+	$fta = $_POST['fta'];
+
+	$stmt = $db->prepare("INSERT OR IGNORE INTO PlayerStats (PlayerID, Season, AST, BLK, FOUL, REB, STL, TOver, FGM, FGA, FTM, FTA) VALUES (:playerID, :season, :ast, :blk, :foul, :reb, :stl, :tover, :fgm, :fma, :ftm, :fta)");
+
+	$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('ast', $ast, SQLITE3_INTEGER);
+	$stmt->bindValue('blk', $blk, SQLITE3_INTEGER);
+	$stmt->bindValue('foul', $foul, SQLITE3_INTEGER);
+	$stmt->bindValue('reb', $reb, SQLITE3_INTEGER);
+	$stmt->bindValue('stl', $stl, SQLITE3_INTEGER);
+	$stmt->bindValue('tover', $tover, SQLITE3_INTEGER);
+	$stmt->bindValue('fgm', $fgm, SQLITE3_INTEGER);
+	$stmt->bindValue('fga', $fga, SQLITE3_INTEGER);
+	$stmt->bindValue('ftm', $ftm, SQLITE3_INTEGER);
+	$stmt->bindValue('fta', $fta, SQLITE3_INTEGER);
+	$stmt->execute();
+
+	echo "Player Stat Successfully Inserted";
+}
+
+function updatePlayerStat($db)
+{
+	$playerid = $_POST['playerid'];
+	$season = $_POST['season'];
+	$ast = $_POST['ast'];
+	$blk = $_POST['blk'];
+	$foul = $_POST['foul'];
+	$reb = $_POST['reb'];
+	$stl = $_POST['stl'];
+	$tover = $_POST['tover'];
+	$fgm = $_POST['fgm'];
+	$fga = $_POST['fga'];
+	$ftm = $_POST['ftm'];
+	$fta = $_POST['fta'];
+
+	$stmt = $db->prepare("UPDATE PlayerStats SET AST = :ast, BLK = :blk, FOUL = :foul, REB = :reb, STL = :stl, TOver = :tover, FGM = :fgm, FGA = :fga, FTM = :ftm, FTA = :fta WHERE PlayerID = :playerID AND Season = :season");
+
+	$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('ast', $ast, SQLITE3_INTEGER);
+	$stmt->bindValue('blk', $blk, SQLITE3_INTEGER);
+	$stmt->bindValue('foul', $foul, SQLITE3_INTEGER);
+	$stmt->bindValue('reb', $reb, SQLITE3_INTEGER);
+	$stmt->bindValue('stl', $stl, SQLITE3_INTEGER);
+	$stmt->bindValue('tover', $tover, SQLITE3_INTEGER);
+	$stmt->bindValue('fgm', $fgm, SQLITE3_INTEGER);
+	$stmt->bindValue('fga', $fga, SQLITE3_INTEGER);
+	$stmt->bindValue('ftm', $ftm, SQLITE3_INTEGER);
+	$stmt->bindValue('fta', $fta, SQLITE3_INTEGER);
+	$stmt->execute();
+
+	echo "Player Stat Successfully Updated";
+}
+
+function deletePlayerStat($db)
+{
+	$playerid = $_POST['playerid'];
+	$season = $_POST['season'];
+
+	$stmt = $db->prepare("DELETE FROM PlayerStats WHERE Season = :season AND PlayerID = :playerID");
+
+	$stmt->bindValue('playerID', $playerid, SQLITE3_INTEGER);
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+
+	$stmt->execute();
+
+	echo "Player Stat Successfully Removed";
+}
+
 ?>
