@@ -28,40 +28,69 @@
 
 <section id="bracket">
     <div class="container">
+        <div class="split split-one">
+
+            <table id="stats">
+                <tr>
+
+                    <th>Team ID</th>
+                    <th>Team Stats</th>
+                    <th>Coach Name</th>
+                    <th>City</th>
+                    <th>State</th>
+                </tr>
+
+                <tr>
+                    <?php
+                    //                $name = $_GET('name');
+                    $id = $_GET['id'];
+
+
+                    $results = $db->query('SELECT * FROM Teams WHERE TeamID ='. $id);
+
+                    while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
+                        echo "<tr>";
+                        echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[CoachName]</td><td>$row[City]</td><td>$row[State]</td><br>";
+                        echo "</tr>";
+                    }
+
+                    ?>
+                </tr>
+            </table>
+
+        </div>
+
+        <div class = "split split-two">
+
+            <table id="stats">
+                <tr>
+
+                    <th>Roster</th>
+
+                </tr>
+
+                <tr>
+                    <?php
 
 
 
-        <table id="stats">
-            <tr>
+                    $results = $db->query('SELECT * FROM Player WHERE TeamID ='. $id);
 
-                <th>Team ID</th>
-                <th>Team Stats</th>
-                <th>Coach Name</th>
-                <th>City</th>
-                <th>State</th>
-            </tr>
+                    while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
+                        $name = $row['FirstName'] . " " . $row['LastName'];
+                        $playerid = "PlayerPage.php?id=" . $row['PlayerID'];
+                        echo "<tr>";
+                        echo "<td><a href=$playerid>$name</td>";
+                        echo "</tr>";
+                    }
 
-            <tr>
-             <?php
-//                $name = $_GET('name');
-                $id = $_GET['id'];
+                    ?>
+                </tr>
+            </table>
 
-
-                $results = $db->query('SELECT * FROM Teams WHERE TeamID ='. $id);
-
-                while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-                    echo "<tr>";
-                    echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[CoachName]</td><td>$row[City]</td><td>$row[State]</td><br>";
-                    echo "</tr>";
-                }
-
-                ?>
-            </tr>
-        </table>
-
-
-
+        </div>
 
 
     </div>
 </section>
+

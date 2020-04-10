@@ -1,5 +1,9 @@
 <link rel="stylesheet" href="css/tournament.css">
-<?php include "functions.php"; ?>
+<?php include "functions.php";
+$playerID = $_GET['id'];
+?>
+
+
 
 
 
@@ -19,7 +23,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Team Stats</h2>
+        <h2 id="headline">Player Stats</h2>
 
 
 
@@ -29,11 +33,18 @@
 <section id="bracket">
     <div class="container">
 
+        <?php
+
+        $nameResults = $db->query('SELECT * FROM Player WHERE PlayerID=' .$playerID);
+        while ($row = $nameResults->fetchArray(SQLITE3_ASSOC)) {
+            echo "<h3>Player Name: {$row[FirstName]} {$row[LastName]}</h3>";
+        }
+
+        ?>
 
         <table id="stats">
             <tr>
-                <th>Player ID</th>
-<!--                <th>Player Name</th>-->
+
                 <th>Season</th>
                 <th>AST</th>
                 <th>BLK</th>
@@ -50,13 +61,14 @@
             <tr>
              <?php
 
-                $playerID = $_GET['id'];
+
 
                 $results = $db->query('SELECT * FROM PlayerStats WHERE PlayerID=' . $playerID);
 
+
                 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                     echo "<tr>";
-                    echo "<td>$row[PlayerID]</td><td>$row[Season]</td><td>$row[AST]</td><td>$row[BLK]</td><td>$row[FOUL]</td><td>$row[REB]</td><td>$row[STL]</td><td>$row[TO]</td><td>$row[FGM]</td><td>$row[FGA]</td><td>$row[FTM]</td><td>$row[FTA]</td>";
+                    echo "<td>$row[Season]</td><td>$row[AST]</td><td>$row[BLK]</td><td>$row[FOUL]</td><td>$row[REB]</td><td>$row[STL]</td><td>$row[TO]</td><td>$row[FGM]</td><td>$row[FGA]</td><td>$row[FTM]</td><td>$row[FTA]</td>";
                     echo "</tr>";
                 }
 
