@@ -49,7 +49,15 @@ if(isset($_POST['submit'])) {
              deleteTeam($db);
          }
     }
-
+    elseif ($_GET['form'] == 'insertGame') {
+         if ($_POST['submit'] == 'Insert') {
+            insertGame($db);
+         } elseif ($_POST['submit'] == 'Update') {
+            updateGame($db);
+         } elseif ($_POST['submit'] == 'Delete') {
+            deleteGame($db);
+         }
+    }
 }
 
 ?>

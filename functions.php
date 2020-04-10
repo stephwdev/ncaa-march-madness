@@ -134,7 +134,7 @@ function updateTeam($db)
 	$state = $_POST['state'];
 
 
-	$stmt = $db->prepare("UPDATE Teams SET TeamName = :teamName, CoachName = :coachName, City = :city, State = :state WHERE TeamID = :teamID)");
+	$stmt = $db->prepare("UPDATE Teams SET TeamName = :teamName, CoachName = :coachName, City = :city, State = :state WHERE TeamID = :teamID");
 
 	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
 	$stmt->bindValue('teamName', $teamname);
@@ -157,6 +157,67 @@ function deleteTeam($db)
 	$stmt->execute();
 
 	echo "Team Successfully Removed";
+}
+
+function insertGame($db)
+{
+	$gameid = $_POST['gameid'];
+	$season = $_POST['season'];
+	$teamid = $_POST['teamid'];
+	$score = $_POST['score'];
+	$result = $_POST['result'];
+	$round = $_POST['round'];
+
+
+	$stmt = $db->prepare("INSERT OR IGNORE INTO Games (GameID, Season, TeamID, Score, Result, Round) VALUES (:gameID, :season, :teamID, :score, :result, :round)");
+
+	$stmt->bindValue('gameID', $gameid, SQLITE3_INTEGER);
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->bindValue('score', $score, SQLITE3_INTEGER);
+	$stmt->bindValue('result', $result);
+	$stmt->bindValue('round', $round);
+	$stmt->execute();
+
+	echo "Game Successfully Inserted";
+}
+
+function updateGame($db)
+{
+	$gameid = $_POST['gameid'];
+	$season = $_POST['season'];
+	$teamid = $_POST['teamid'];
+	$score = $_POST['score'];
+	$result = $_POST['result'];
+	$round = $_POST['round'];
+
+
+	$stmt = $db->prepare("UPDATE Games SET Season = :season, Score = :score, Result = :result, Round = :round WHERE GameID = :gameID AND TeamID = :teamID");
+
+	$stmt->bindValue('gameID', $gameid, SQLITE3_INTEGER);
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->bindValue('score', $score, SQLITE3_INTEGER);
+	$stmt->bindValue('result', $result);
+	$stmt->bindValue('round', $round);
+	$stmt->execute();
+
+	echo "Game Successfully Updated";
+}
+
+function deleteGame($db)
+{
+	$gameid = $_POST['gameid'];
+	$teamid = $_POST['teamid'];
+
+	$stmt = $db->prepare("DELETE FROM Games WHERE GameID = :gameID AND TeamID = :teamID");
+
+	$stmt->bindValue('gameID', $gameid, SQLITE3_INTEGER);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+
+	$stmt->execute();
+
+	echo "Game Successfully Removed";
 }
 
 ?>
