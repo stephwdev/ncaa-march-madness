@@ -220,4 +220,61 @@ function deleteGame($db)
 	echo "Game Successfully Removed";
 }
 
+function insertTournament($db)
+{
+	$season = $_POST['season'];
+	$teamid = $_POST['teamid'];
+	$seed = $_POST['seed'];
+	$depth = $_POST['depth'];
+	$division = $_POST['division'];
+
+
+	$stmt = $db->prepare("INSERT OR IGNORE INTO Tournament (Season, TeamID, Seed, Depth, Division) VALUES (:season, :teamID, :seed, :depth, :division)");
+
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->bindValue('seed', $seed);
+	$stmt->bindValue('depth', $depth);
+	$stmt->bindValue('division', $division);
+	$stmt->execute();
+
+	echo "Tournament Successfully Inserted";
+}
+
+function updateTournament($db)
+{
+	$season = $_POST['season'];
+	$teamid = $_POST['teamid'];
+	$seed = $_POST['seed'];
+	$depth = $_POST['depth'];
+	$division = $_POST['division'];
+
+
+	$stmt = $db->prepare("UPDATE Tournament SET Seed = :seed, Depth = :depth, Division = :division WHERE Season = :season AND TeamID = :teamID");
+
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+	$stmt->bindValue('seed', $seed);
+	$stmt->bindValue('depth', $depth);
+	$stmt->bindValue('division', $division);
+	$stmt->execute();
+
+	echo "Tournament Successfully Updated";
+}
+
+function deleteTournament($db)
+{
+	$season = $_POST['season'];
+	$teamid = $_POST['teamid'];
+
+	$stmt = $db->prepare("DELETE FROM Tournament WHERE Season = :season AND TeamID = :teamID");
+
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('teamID', $teamid, SQLITE3_INTEGER);
+
+	$stmt->execute();
+
+	echo "Tournament Successfully Removed";
+}
+
 ?>
