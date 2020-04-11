@@ -74,11 +74,19 @@ if(isset($_POST['submit'])) {
             updatePlayerStat($db);
          } elseif ($_POST['submit'] == 'Delete') {
             deletePlayerStat($db);
-}        }
+       }
     }
+    elseif ($_GET['form'] == 'insertTeamStat') {
+         if ($_POST['submit'] == 'Insert') {
+            insertTeamStat($db);
+         } elseif ($_POST['submit'] == 'Update') {
+            updateTeamStat($db);
+         } elseif ($_POST['submit'] == 'Delete') {
+            deleteTeamStat($db);
+       }
+    }
+}
+
 ?>
-
-
-
     </div>
 </section>

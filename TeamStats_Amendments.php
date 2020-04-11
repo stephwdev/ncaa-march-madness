@@ -27,26 +27,14 @@
     <div class="container">
 
         <div class="round round-two current">
-            <div class="round-details">Player Stats Amendments<br/></div>
+            <div class="round-details">Team Stats Amendments<br/></div>
 
-            <form action="form_process.php?form=insertPlayerStat" method="post">
+            <form action="form_process.php?form=insertTeamStat" method="post">
 
-                <label for="playerid">PlayerID</label>
-                <input type = "text" name = "playerid"><br>
+                <label for="teamid">TeamID</label>
+                <input type = "text" name = "teamid"><br>
                 <label for="season">Season</label>
                 <input type = "text" name = "season"><br>
-                <label for="ast">AST</label>
-                <input type = "text" name = "ast"><br>
-                <label for="blk">BLK</label>
-                <input type = "text" name = "blk"><br>
-                <label for="foul">FOUL</label>
-                <input type = "text" name = "foul"><br>
-                <label for="reb">REB</label>
-                <input type = "text" name = "reb"><br>
-                <label for="stl">STL</label>
-                <input type = "text" name = "stl"><br>
-                <label for="tover">TOver</label>
-                <input type = "text" name = "tover"><br>
                 <label for="fgm">FGM</label>
                 <input type = "text" name = "fgm"><br>
                 <label for="fga">FGA</label>
@@ -55,6 +43,16 @@
                 <input type = "text" name = "ftm"><br>
                 <label for="fta">FTA</label>
                 <input type = "text" name = "fta"><br>
+                <label for="ast">AST</label>
+                <input type = "text" name = "ast"><br>
+                <label for="tover">TOver</label>
+                <input type = "text" name = "tover"><br>
+                <label for="stl">STL</label>
+                <input type = "text" name = "stl"><br>
+                <label for="blk">BLK</label>
+                <input type = "text" name = "blk"><br>
+                <label for="reb">REB</label>
+                <input type = "text" name = "reb"><br>
 
                 <input type="submit" name="submit" value="Insert">
                 <input type="submit" name="submit" value="Delete">
