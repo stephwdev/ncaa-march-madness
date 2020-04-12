@@ -69,7 +69,7 @@ $playerID = $_GET['id'];
 
                 while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
                     echo "<tr>";
-                    echo "<td>$row[Season]</td><td>$row[AST]</td><td>$row[BLK]</td><td>$row[FOUL]</td><td>$row[REB]</td><td>$row[STL]</td><td>$row[TO]</td><td>$row[FGM]</td><td>$row[FGA]</td><td>$row[FTM]</td><td>$row[FTA]</td>";
+                    echo "<td>$row[Season]</td><td>$row[AST]</td><td>$row[BLK]</td><td>$row[FOUL]</td><td>$row[REB]</td><td>$row[STL]</td><td>$row[TOver]</td><td>$row[FGM]</td><td>$row[FGA]</td><td>$row[FTM]</td><td>$row[FTA]</td>";
                     echo "</tr>";
                 }
 

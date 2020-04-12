@@ -31,16 +31,21 @@
 
         <h2 class="text-muted">How this site works</h2><br>
 
-        <h3>This site is mainly used to gain information about the NCAA tournaments of the past. We're hoping that this will help you with building your bracket in the future!</h3><br>
+        <p>This site is mainly used to gain information about the NCAA tournaments of the past. <br> We're hoping that this will help you with building your bracket in the future!
+        <br> Click a year below to view that tournament's bracket.</p><br>
 
-        <p><a href="2015.php">2015</a></p>
-        <p><a href="2016.php">2016</a></p>
-        <p><a href="2017.php">2017</a></p>
-        <p><a href="2018.php">2018</a></p>
-        <p><a href="2019.php">2019</a></p>
-        <p><a href="LoginPage.php">Admin Login</a></p>
-
-
+        <p><a href = '2015.php' class = 'button'>2015 Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = '2016.php' class = 'button'>2016 Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = '2017.php' class = 'button'>2017 Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = '2018.php' class = 'button'>2018 Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = '2019.php' class = 'button'>2019 Tournament</a><br></p>
+        <p><br></p>
+        <p><a href = 'LoginPage.php' class = 'button'>Admin Login</a><br></p>
+        <p><br></p>
 
 
     </div>

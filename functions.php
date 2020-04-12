@@ -75,7 +75,7 @@ Tournament.TeamID = Teams.TeamID WHERE Tournament.Season = :season) AS TeamsX IN
 	$row = $results->fetchArray();
 
 	echo "<tr>";
-	echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[CoachName]</td><td>$row[City]</td><td>$row[State]</td>";
+	echo "<td>$row[TeamName]</td><td>$row[CoachName]</td><td>$row[City]</td><td>$row[State]</td>";
 	echo "<td>$row[Season]</td><td>$row[FGM]</td><td>$row[FGA]</td><td>$row[FTM]</td><td>$row[FTA]</td>";
 	echo "<td>$row[AST]</td><td>$row[TOver]</td><td>$row[STL]</td><td>$row[BLK]</td><td>$row[REB]</td>";
 	echo "</tr>";
@@ -83,22 +83,36 @@ Tournament.TeamID = Teams.TeamID WHERE Tournament.Season = :season) AS TeamsX IN
 }
 
 function getPlayerStats($season, $teamid, $db) {
-	$stmt = $db->prepare("SELECT DISTINCT Player.FirstName, Player.LastName, PlayerStats.* FROM Player, (SELECT DISTINCT Teams.*, TeamStats.Season, TeamStats.FGM, TeamStats.FGA, 
-	TeamStats.FTM, TeamStats.FTA, TeamStats.AST, TeamStats.TOver, TeamStats.STL, TeamStats.BLK, TeamStats.REB FROM Teams, (SELECT Tournament.Season, Tournament.Seed,  
-	Tournament.Depth, Tournament.Division, Teams.* FROM Tournament INNER JOIN Teams ON Tournament.TeamID = Teams.TeamID WHERE Tournament.Season = :season) AS TeamsX INNER JOIN TeamStats ON 
-	Teams.TeamID = TeamStats.TeamID WHERE TeamsX.Season = TeamStats.Season AND Teams.TeamID = :teamid) AS TeamStatsX LEFT JOIN PlayerStats ON PlayerStats.PlayerID = Player.PlayerID 
+	$stmt = $db->prepare("SELECT DISTINCT Player.FirstName, Player.LastName, PlayerStats.* FROM Player,  (
+	SELECT DISTINCT Teams.*, TeamStats.Season, TeamStats.FGM, TeamStats.FGA,  TeamStats.FTM, TeamStats.FTA, 
+	TeamStats.AST, TeamStats.TOver, TeamStats.STL, TeamStats.BLK, TeamStats.REB FROM Teams, (SELECT Tournament.Season, Tournament.Seed,  
+	Tournament.Depth, Tournament.Division, Teams.* FROM Tournament INNER JOIN Teams ON Tournament.TeamID = Teams.TeamID 
+	WHERE Tournament.Season = :season ) AS TeamsX INNER JOIN TeamStats ON Teams.TeamID = TeamStats.TeamID 
+	WHERE TeamsX.Season = TeamStats.Season AND Teams.TeamID = :teamid) AS TeamStatsX LEFT JOIN PlayerStats ON 
+	PlayerStats.PlayerID = Player.PlayerID 
 	WHERE Player.TeamID = TeamStatsX.TeamID");
 
 	$stmt->bindValue('season', $season);
 	$stmt->bindValue('teamid', $teamid);
 	$results = $stmt->execute();
+	$i = 1;
 
 	while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-		$name = $row['FirstName'] . " " . $row['LastName'];
-		$playerid = "PlayerPage.php?id=" . $row['PlayerID'];
-		echo "<tr>";
-		echo "<td><a href=$playerid>$name</td>";
-		echo "</tr>";
+
+		if($row['Season'] == NULL) {
+			continue;
+		} elseif ($row['Season'] == $season) {
+			$name = $row['FirstName'] . " " . $row['LastName'];
+			$playerid = "PlayerPage.php?id=" . $row['PlayerID'];
+			echo "<tr>";
+			echo "<td>$i</td><td><a href=$playerid>$name</td><td>$row[Season]</td><td>$row[FGM]</td><td>$row[FGA]</td>";
+			echo "<td>$row[FTM]</td><td>$row[FTA]</td><td>$row[AST]</td><td>$row[TOver]</td><td>$row[STL]</td><td>$row[BLK]</td><td>$row[REB]</td><td>$row[FOUL]</td>";
+			echo "</tr>";
+			$i++;
+		} else {
+			continue;
+		}
+
 	}
 }
 

@@ -33,7 +33,7 @@
             <table id="stats">
                 <tr>
 
-                    <th>Team ID</th>
+
                     <th>Team Name</th>
                     <th>Coach Name</th>
                     <th>City</th>
@@ -79,6 +79,18 @@
                             <tr>
 
                                 <th>Roster</th>
+                                <th>Player Name</th>
+                                <th>Season</th>
+                                <th>FGM</th>
+                                <th>FGA</th>
+                                <th>FTM</th>
+                                <th>FTA</th>
+                                <th>AST</th>
+                                <th>TOver</th>
+                                <th>STL</th>
+                                <th>BLK</th>
+                                <th>REB</th>
+                                <th>FOUL</th>
 
                             </tr>
 

@@ -30,68 +30,68 @@
             <div class="round round-one current">
                 <div class="round-details">Round 1<br/> </div>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y01', $db)?><span class="score">76</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y16a', $db)?><span class="score">82</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y01', $db)?><span class="score">79</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y16a', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y08', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y09', $db)?><span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y08', $db)?><span class="score">66</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y09', $db)?><span class="score">65</span></li>
                 </ul>
                 <ul class="matchup">
                     <li class="team team-top"><?php getName(2015, 'Y05', $db)?><span class="score">68</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y12', $db)?><span class="score">54</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y12', $db)?><span class="score">62</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y04', $db)?><span class="score">74</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y13', $db)?><span class="score">92</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y04', $db)?><span class="score">65</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y13', $db)?><span class="score">62</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y06', $db)?><span class="score">78</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y11', $db)?><span class="score">80</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y06', $db)?><span class="score">56</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y11', $db)?><span class="score">48</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y03', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y14', $db)?><span class="score">63</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y03', $db)?><span class="score">69</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y14', $db)?><span class="score">65</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y07', $db)?><span class="score">70</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y10', $db)?><span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y07', $db)?><span class="score">81</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y10', $db)?><span class="score">76</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Y02', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Y15', $db)?><span class="score">68</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Y02', $db)?><span class="score">75</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Y15', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z01', $db)?><span class="score">76</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z16', $db)?><span class="score">82</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z01', $db)?><span class="score">86</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z16', $db)?><span class="score">72</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z08', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z09', $db)?><span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z08', $db)?><span class="score">79</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z09', $db)?><span class="score">73</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z05', $db)?><span class="score">68</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z12', $db)?><span class="score">54</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z05', $db)?><span class="score">56</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z12', $db)?><span class="score">53</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z04', $db)?><span class="score">74</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z13', $db)?><span class="score">92</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z04', $db)?><span class="score">67</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z13', $db)?><span class="score">65</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z06', $db)?><span class="score">78</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z11b', $db)?><span class="score">80</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z06', $db)?><span class="score">76</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z11b', $db)?><span class="score">57</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z03', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z14', $db)?><span class="score">63</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z03', $db)?><span class="score">56</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z14', $db)?><span class="score">57</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z07', $db)?><span class="score">70</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z10', $db)?><span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z07', $db)?><span class="score">72</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z10', $db)?><span class="score">75</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'Z02', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'Z15', $db)?><span class="score">68</span></li>
+                    <li class="team team-top"><?php getName(2015, 'Z02', $db)?><span class="score">93</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z15', $db)?><span class="score">72</span></li>
                 </ul>
             </div>  <!-- END ROUND ONE -->
 
@@ -124,7 +124,7 @@
                 </ul>
                 <ul class="matchup">
                     <li class="team team-top"><?php getName(2015, 'Z06', $db)?><span class="score">75</span></li>
-                    <li class="team team-bottom">14 Georgia St.<span class="score">67</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'Z14', $db)?><span class="score">67</span></li>
                 </ul>
                 <ul class="matchup">
                     <li class="team team-top"><?php getName(2015, 'Z10', $db)?><span class="score">58</span></li>
@@ -270,39 +270,39 @@
             <div class="round round-one current">
                 <div class="round-details">Round 1<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W01', $db)?><span class="score">62</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W16', $db)?><span class="score">54</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W01', $db)?><span class="score">93</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W16', $db)?><span class="score">52</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W08', $db)?><span class="score">68</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W09', $db)?><span class="score">66</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W08', $db)?><span class="score">66</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W09', $db)?><span class="score">65</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W05', $db)?><span class="score">64</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W12', $db)?><span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W05', $db)?><span class="score">71</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W12', $db)?><span class="score">54</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W04', $db)?><span class="score">36</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W13', $db)?><span class="score">40</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W04', $db)?><span class="score">57</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W13', $db)?><span class="score">55</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W06', $db)?><span class="score">38</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W11b', $db)?><span class="score">44</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W06', $db)?><span class="score">53</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W11b', $db)?><span class="score">66</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W03', $db)?><span class="score">52</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W14', $db)?><span class="score">80</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W03', $db)?><span class="score">69</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W14', $db)?><span class="score">60</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W07', $db)?><span class="score">58</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W10', $db)?><span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W07', $db)?><span class="score">70</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W10', $db)?><span class="score">63</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'W02', $db)?><span class="score">74</span></li>
-                    <li class="team team-bottom"><?php getName(2015, 'W15', $db)?><span class="score">111</span></li>
+                    <li class="team team-top"><?php getName(2015, 'W02', $db)?><span class="score">79</span></li>
+                    <li class="team team-bottom"><?php getName(2015, 'W15', $db)?><span class="score">67</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><?php getName(2015, 'X01', $db)?><span class="score">86</span></li>
+                    <li class="team team-top"><?php getName(2015, 'X01', $db)?><span class="score">85</span></li>
                     <li class="team team-bottom"><?php getName(2015, 'X16b', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
