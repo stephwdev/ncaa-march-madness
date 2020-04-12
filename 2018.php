@@ -30,68 +30,68 @@
             <div class="round round-one current">
                 <div class="round-details">Round 1<br/> </div>
                 <ul class="matchup">
-                    <li class="team team-top"><a href="https://www.facebook.com/">1 Kentucky</a><span class="score">76</span></li>
-                    <li class="team team-bottom">16 Hampton<span class="score">82</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y01', $db)?><span class="score">76</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y16', $db)?><span class="score">82</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">8 Cincinatti<span class="score">64</span></li>
-                    <li class="team team-bottom">9 Purdue<span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y08', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y09', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 W. Virginia<span class="score">68</span></li>
-                    <li class="team team-bottom">12 Buffalo<span class="score">54</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y05', $db)?><span class="score">68</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y12', $db)?><span class="score">54</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">4 Maryland<span class="score">74</span></li>
-                    <li class="team team-bottom">13 Valparaiso<span class="score">92</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y04', $db)?><span class="score">74</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y13', $db)?><span class="score">92</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 Butler<span class="score">78</span></li>
-                    <li class="team team-bottom">11 Texas<span class="score">80</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y06', $db)?><span class="score">78</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y11', $db)?><span class="score">80</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">3 Notre Dame<span class="score">64</span></li>
-                    <li class="team team-bottom">14 Northeastern<span class="score">63</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y03', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y14', $db)?><span class="score">63</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 Wichita State<span class="score">70</span></li>
-                    <li class="team team-bottom">10 Indiana<span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y07', $db)?><span class="score">70</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y10', $db)?><span class="score">59</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">2 Kansas<span class="score">64</span></li>
-                    <li class="team team-bottom">15 New Mexico State<span class="score">68</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y02', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y15', $db)?><span class="score">68</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top"><a href="https://www.facebook.com/">1Wisconsin</a><span class="score">76</span></li>
-                    <li class="team team-bottom">16 Coastal Carolina<span class="score">82</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z01', $db)?><span class="score">76</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z16b', $db)?><span class="score">82</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">8 Oregon<span class="score">64</span></li>
-                    <li class="team team-bottom">9 Oklahoma St.<span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z08', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z09', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 Arkansas<span class="score">68</span></li>
-                    <li class="team team-bottom">12 Wofford<span class="score">54</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z05', $db)?><span class="score">68</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z12', $db)?><span class="score">54</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">4 N. Carolina<span class="score">74</span></li>
-                    <li class="team team-bottom">13 Harvard<span class="score">92</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z04', $db)?><span class="score">74</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z13', $db)?><span class="score">92</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 Xavier<span class="score">78</span></li>
-                    <li class="team team-bottom">11 BYU/OleMiss<span class="score">80</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z06', $db)?><span class="score">78</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z11', $db)?><span class="score">80</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">3 Baylor<span class="score">64</span></li>
-                    <li class="team team-bottom">14 Georgia St.<span class="score">63</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z03', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z14', $db)?><span class="score">63</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 VCU<span class="score">70</span></li>
-                    <li class="team team-bottom">10 Ohio St.<span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z07', $db)?><span class="score">70</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z10', $db)?><span class="score">59</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">2 Arizona<span class="score">64</span></li>
-                    <li class="team team-bottom">15 Texas Southern<span class="score">68</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z02', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z15', $db)?><span class="score">68</span></li>
                 </ul>
             </div>  <!-- END ROUND ONE -->
 
@@ -99,56 +99,56 @@
             <div class="round round-two current">
                 <div class="round-details">Round 2<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top">1 Kentucky<span class="score">64</span></li>
-                    <li class="team team-bottom">8 Cincinatti<span class="score">51</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y16', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y09', $db)?><span class="score">51</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 West Virginia<span class="score">69</span></li>
-                    <li class="team team-bottom">4 Maryland<span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y05', $db)?><span class="score">69</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y13', $db)?><span class="score">59</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 Butler<span class="score">64</span></li>
-                    <li class="team team-bottom">3 Notre Dame<span class="score">67</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y11', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y03', $db)?><span class="score">67</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 Wichita St.<span class="score">78</span></li>
-                    <li class="team team-bottom">2 Kansas<span class="score">65</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y07', $db)?><span class="score">78</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y02', $db)?><span class="score">65</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">1 Wisconsin<span class="score">72</span></li>
-                    <li class="team team-bottom">8 Oregon<span class="score">65</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z01', $db)?><span class="score">72</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z09', $db)?><span class="score">65</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 Arkansas<span class="score">78</span></li>
-                    <li class="team team-bottom">4 North Carolina<span class="score">87</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z05', $db)?>s<span class="score">78</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z04', $db)?><span class="score">87</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 Xavier<span class="score">75</span></li>
-                    <li class="team team-bottom">14 Georgia St.<span class="score">67</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z06', $db)?><span class="score">75</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z03', $db)?><span class="score">67</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">10 Ohio St.<span class="score">58</span></li>
-                    <li class="team team-bottom">2 Arizona<span class="score">73</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z07', $db)?><span class="score">58</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z02', $db)?><span class="score">73</span></li>
                 </ul>
             </div>  <!-- END ROUND TWO -->
 
             <div class="round round-three current">
                 <div class="round-details">Round 3<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top">1 Kentucky<span class="score">78</span></li>
-                    <li class="team team-bottom">5 West Virginia<span class="score">39</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y09', $db)?><span class="score">78</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y05', $db)?><span class="score">39</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">3 Notre Dame<span class="score">81</span></li>
-                    <li class="team team-bottom">7 Wichita St.<span class="score">70</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y11', $db)?><span class="score">81</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y07', $db)?><span class="score">70</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">1 Wisconsin<span class="score">79</span></li>
-                    <li class="team team-bottom">4 North Carolina<span class="score">72</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z09', $db)?><span class="score">79</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z04', $db)?><span class="score">72</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 Xavier<span class="score">60</span></li>
-                    <li class="team team-bottom">2 Arizona<span class="score">68</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z03', $db)?><span class="score">60</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z07', $db)?><span class="score">68</span></li>
                 </ul>
             </div>  <!-- END ROUND THREE -->
 
@@ -156,12 +156,12 @@
                 <div class="round-details">Round 4<br/></div>
 
                 <ul class="matchup">
-                    <li class="team team-top">Kentucky<span class="score">68</span></li>
-                    <li class="team team-bottom">Notre Dame<span class="score">66</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y09', $db)?><span class="score">68</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Y11', $db)?><span class="score">66</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">Wisconsin<span class="score">85</span></li>
-                    <li class="team team-bottom">Arizona<span class="score">78</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z09', $db)?><span class="score">85</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z03', $db)?><span class="score">78</span></li>
                 </ul>
 
             </div>  <!-- END ROUND THREE -->
@@ -171,8 +171,8 @@
             <div class="semis-l">
                 <div class="round-details">west semifinals <br/></div>
                 <ul class ="matchup championship">
-                    <li class="team team-top">Kentucky<span class="score">64</span></li>
-                    <li class="team team-bottom">Wisconsin<span class="score">71</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Y11', $db)?><span class="score">57</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'Z03', $db)?><span class="score">69</span></li>
 
                 </ul>
 
@@ -181,15 +181,15 @@
                 <i class="fa fa-trophy"></i>
                 <div class="round-details">championship <br/></div>
                 <ul class ="matchup championship">
-                    <li class="team team-top">Wisconsin<span class="score">63</span></li>
-                    <li class="team team-bottom">Duke<span class="score">68</span></li>
+                    <li class="team team-top"><?php getName(2018, 'Z03', $db)?><span class="score">62</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W01', $db)?><span class="score">79</span></li>
                 </ul>
             </div>
             <div class="semis-r">
                 <div class="round-details">east semifinals <br/></div>
                 <ul class ="matchup championship">
-                    <li class="team team-top">Michigan St.<span class="score">61</span></li>
-                    <li class="team team-bottom">Duke<span class="score">81</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W01', $db)?><span class="score">95</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X01', $db)?><span class="score">79</span></li>
 
                 </ul>
             </div>
@@ -201,12 +201,12 @@
             <div class="round round-four current">
                 <div class="round-details">Round 4<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top">Louisville<span class="score">70</span></li>
-                    <li class="team team-bottom">Michigan St.<span class="score">76</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W01', $db)?><span class="score">70</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W03', $db)?><span class="score">76</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">Duke<span class="score">66</span></li>
-                    <li class="team team-bottom">Gonzaga<span class="score">52</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X01', $db)?><span class="score">66</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X02', $db)?><span class="score">52</span></li>
                 </ul>
 
             </div>  <!-- END ROUND THREE -->
@@ -214,124 +214,124 @@
             <div class="round round-three current">
                 <div class="round-details">Round 3<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top">NC State<span class="score">65</span></li>
-                    <li class="team team-bottom">4 Louisville<span class="score">75</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W01', $db)?><span class="score">65</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W05', $db)?><span class="score">75</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">3 Oklahoma<span class="score">58</span></li>
-                    <li class="team team-bottom">7 Michigan St.<span class="score">62</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W03', $db)?><span class="score">58</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W02', $db)?><span class="score">62</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">1 Duke<span class="score">63</span></li>
-                    <li class="team team-bottom">5 Utah<span class="score">57</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X01', $db)?><span class="score">63</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X05', $db)?><span class="score">57</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">11 UCLA<span class="score">62</span></li>
-                    <li class="team team-bottom">2 Gonzaga<span class="score">74</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X11b', $db)?><span class="score">62</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X02', $db)?><span class="score">74</span></li>
                 </ul>
             </div>  <!-- END ROUND THREE -->
 
             <div class="round round-two current">
                 <div class="round-details">Round 2<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top">1 Villanova<span class="score">71</span></li>
-                    <li class="team team-bottom">8 NC State<span class="score">68;</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W01', $db)?><span class="score">71</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W09', $db)?><span class="score">68;</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 Northern Iowa<span class="score">53</span></li>
-                    <li class="team team-bottom">4 Louisville<span class="score">66</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W05', $db)?><span class="score">53</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W13', $db)?><span class="score">66</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">11 Dayton<span class="score">66</span></li>
-                    <li class="team team-bottom">3 Oklahoma<span class="score">72</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W06', $db)?><span class="score">66</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W03', $db)?><span class="score">72</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 Michigan St.<span class="score">60</span></li>
-                    <li class="team team-bottom">2 Virginia<span class="score">54</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W10', $db)?><span class="score">60</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W02', $db)?><span class="score">54</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">1 Duke<span class="score">68</span></li>
-                    <li class="team team-bottom">8 San Diego State<span class="score">49</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X01', $db)?><span class="score">68</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X08', $db)?><span class="score">49</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 Utah<span class="score">75</span></li>
-                    <li class="team team-bottom">4 Georgetown<span class="score">64</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X05', $db)?><span class="score">75</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X04', $db)?><span class="score">64</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">11 UCLA<span class="score">92</span></li>
-                    <li class="team team-bottom">14 UAB<span class="score">75</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X11b', $db)?><span class="score">92</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X03', $db)?><span class="score">75</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 Iowa<span class="score">68</span></li>
-                    <li class="team team-bottom">2 Gonzaga<span class="score">87</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X07', $db)?><span class="score">68</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X02', $db)?><span class="score">87</span></li>
                 </ul>
 
             </div>  <!-- END ROUND TWO -->
             <div class="round round-one current">
                 <div class="round-details">Round 1<br/></div>
                 <ul class="matchup">
-                    <li class="team team-top">1 Villanova<span class="score">62</span></li>
-                    <li class="team team-bottom">16 Lafayette<span class="score">54</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W01', $db)?><span class="score">62</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W16a', $db)?><span class="score">54</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">8 NC State<span class="score">68</span></li>
-                    <li class="team team-bottom">9 LSU<span class="score">66</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W08', $db)?><span class="score">68</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W09', $db)?><span class="score">66</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 N. Iowa<span class="score">64</span></li>
-                    <li class="team team-bottom">12 wyoming<span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W05', $db)?><span class="score">64</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W12', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">4 Louisville<span class="score">36</span></li>
-                    <li class="team team-bottom">13 UC Irvine<span class="score">40</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W04', $db)?><span class="score">36</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W13', $db)?><span class="score">40</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 Providence<span class="score">38</span></li>
-                    <li class="team team-bottom">11 Boise St. / Dayton<span class="score">44</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W06', $db)?><span class="score">38</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W11b', $db)?><span class="score">44</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">3 Oklahoma<span class="score">52</span></li>
-                    <li class="team team-bottom">14 Albany<span class="score">80</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W03', $db)?><span class="score">52</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W14', $db)?><span class="score">80</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 Michigan St.<span class="score">58</span></li>
-                    <li class="team team-bottom">10 Georgia<span class="score">59</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W07', $db)?><span class="score">58</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W10', $db)?><span class="score">59</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">2 Virginia<span class="score">74</span></li>
-                    <li class="team team-bottom">15 Belmont<span class="score">111</span></li>
+                    <li class="team team-top"><?php getName(2018, 'W02', $db)?><span class="score">74</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'W15', $db)?><span class="score">111</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">1 Duke<span class="score"86</span></li>
-                    <li class="team team-bottom">16 R. Morris<span class="score">56</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X01', $db)?><span class="score">86</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X16', $db)?><span class="score">56</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">8 San Diego St.<span class="score">76</span></li>
-                    <li class="team team-bottom">9 St. John's<span class="score">64</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X08', $db)?><span class="score">76</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X09', $db)?><span class="score">64</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">5 Utah<span class="score">57</span></li>
-                    <li class="team team-bottom">12 Stephen F. Austin<span class="score">50</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X05', $db)?><span class="score">57</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X12', $db)?><span class="score">50</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">4 Georgetown<span class="score">84</span></li>
-                    <li class="team team-bottom">13 E. Washington<span class="score">74</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X04', $db)?><span class="score">84</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X13', $db)?><span class="score">74</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">6 SMU<span class="score">59</span></li>
-                    <li class="team team-bottom">11 UCLA<span class="score">60</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X06', $db)?><span class="score">59</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X11', $db)?><span class="score">60</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">3 Iowa St.<span class="score">59</span></li>
-                    <li class="team team-bottom">12 UAB<span class="score">60</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X03', $db)?><span class="score">59</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X12', $db)?><span class="score">60</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">7 Iowa<span class="score">83</span></li>
-                    <li class="team team-bottom">10 Davidson<span class="score">52</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X07', $db)?><span class="score">83</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X10', $db)?><span class="score">52</span></li>
                 </ul>
                 <ul class="matchup">
-                    <li class="team team-top">2 Gonzaga<span class="score">86</span></li>
-                    <li class="team team-bottom">15 N. Dakota St.<span class="score">76</span></li>
+                    <li class="team team-top"><?php getName(2018, 'X02', $db)?><span class="score">86</span></li>
+                    <li class="team team-bottom"><?php getName(2018, 'X15', $db)?><span class="score">76</span></li>
                 </ul>
             </div>  <!-- END ROUND ONE -->
         </div>
@@ -339,9 +339,9 @@
 </section>
 <section class="share">
     <div class="share-wrap">
+        <a href="2015.php">2015</a>
         <a href="2016.php">2016</a>
         <a href="2017.php">2017</a>
-        <a href="2018.php">2018</a>
         <a href="2019.php">2019</a>
     </div>
 </section>

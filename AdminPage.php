@@ -43,11 +43,9 @@
 //
 //        echo "{$row[0]}";
 
-<<<<<<< HEAD
+
         echo "<div class = 'button'><a href = Player_Amendments.php>Player Amendment Form</a></div>";
 
-=======
->>>>>>> 7e917ab6c52d3b7ffe558b7650eff1fb4e70446a
 
 
 

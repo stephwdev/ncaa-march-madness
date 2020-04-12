@@ -44,7 +44,7 @@
             <tr>
                 <?php
 
-                getSeeds(2015, $db);
+                getSeeds(2015, 'X01', $db);
 
                 ?>
             </tr>

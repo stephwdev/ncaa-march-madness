@@ -42,16 +42,24 @@ function getTitle(){
 }
 
 
-function getSeeds($season,  $db) {
+function getName($season, $seed,  $db) {
 
-	$query = "SELECT * FROM Tournament WHERE Season=" . $season;
+	$stmt = $db->prepare("SELECT * FROM Tournament INNER JOIN Teams ON Tournament.TeamID = Teams.TeamID WHERE Seed = :seed AND Season = :season");
 
-	$results = $db->query($query);
-	while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-		echo "<tr>";
-		echo "<td>$row[Season]</td><td>$row[TeamID]</td><td>$row[Seed]</td><td>$row[Depth]</td><td>$row[Division]</td><br>";
-		echo "</tr>";
-	}
+	$stmt->bindValue('season', $season, SQLITE3_INTEGER);
+	$stmt->bindValue('seed', $seed);
+
+	$results = $stmt->execute();
+	$row = $results->fetchArray(SQLITE3_ASSOC);
+	$url = 'Team.php?id=' .$row[TeamID] . '&season=' . $season;
+
+	$displaySeed = substr($seed, 1);
+
+	$name = $displaySeed . " " . $row[TeamName];
+
+	echo "<a href=$url>$name</a>";
+
+
 }
 
 function insertPlayer($db)
