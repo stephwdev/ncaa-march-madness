@@ -34,63 +34,68 @@
                 <tr>
 
                     <th>Team ID</th>
-                    <th>Team Stats</th>
+                    <th>Team Name</th>
                     <th>Coach Name</th>
                     <th>City</th>
                     <th>State</th>
+                    <th>Season</th>
+                    <th>FGM</th>
+                    <th>FGA</th>
+                    <th>FTM</th>
+                    <th>FTA</th>
+                    <th>AST</th>
+                    <th>TOver</th>
+                    <th>STL</th>
+                    <th>BLK</th>
+                    <th>REB</th>
                 </tr>
 
                 <tr>
                     <?php
                     //                $name = $_GET('name');
                     $id = $_GET['id'];
+                    $season = $_GET['season'];
 
-
-                    $results = $db->query('SELECT * FROM Teams WHERE TeamID ='. $id);
-
-                    while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-                        echo "<tr>";
-                        echo "<td>$row[TeamID]</td><td>$row[TeamName]</td><td>$row[CoachName]</td><td>$row[City]</td><td>$row[State]</td><br>";
-                        echo "</tr>";
-                    }
+                    getTeamStats($season, $id, $db);
 
                     ?>
                 </tr>
             </table>
 
-        </div>
-
-        <div class = "split split-two">
-
-            <table id="stats">
-                <tr>
-
-                    <th>Roster</th>
-
-                </tr>
-
-                <tr>
-                    <?php
-
-
-
-                    $results = $db->query('SELECT * FROM Player WHERE TeamID ='. $id);
-
-                    while ($row = $results->fetchArray(SQLITE3_ASSOC)) {
-                        $name = $row['FirstName'] . " " . $row['LastName'];
-                        $playerid = "PlayerPage.php?id=" . $row['PlayerID'];
-                        echo "<tr>";
-                        echo "<td><a href=$playerid>$name</td>";
-                        echo "</tr>";
-                    }
-
-                    ?>
-                </tr>
-            </table>
 
         </div>
 
 
+    </div>
+</section>
+
+
+<section id="bracket">
+    <div class="container">
+        <div class="split split-one">
+                    <div class = "split split-two">
+
+                        <table id="stats">
+                            <tr>
+
+                                <th>Roster</th>
+
+                            </tr>
+
+                            <tr>
+                                <?php
+
+                                getPlayerStats($season, $id, $db);
+
+
+
+                                ?>
+                            </tr>
+                        </table>
+
+                    </div>
+
+        </div>
     </div>
 </section>
 

@@ -44,16 +44,13 @@
 //        echo "{$row[0]}";
 
 
-        echo "<div class = 'button'><a href = Player_Amendments.php>Player Amendment Form</a></div>";
-
-
-
 
 
 
         ?>
 
-
+        <p><a href = 'Player Amendments.php' class = 'button'>Player Amendment Form</a><br></p>
+        <p><br></p>
         <p><a href = 'Form_Template.php' class = 'button'>Add New Player Form</a><br></p>
         <p><br></p>
         <p><a href = 'Form_Template.php' class = 'button'>Add New Team Form</a><br></p>

@@ -44,7 +44,7 @@
             <tr>
                 <?php
 
-                getSeeds(2015, 'X01', $db);
+                getTeamStats(2015, 1314, $db);
 
                 ?>
             </tr>
