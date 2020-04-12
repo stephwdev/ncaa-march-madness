@@ -49,19 +49,19 @@
 
         ?>
 
-        <p><a href = 'Player Amendments.php' class = 'button'>Player Amendment Form</a><br></p>
+        <p><a href = 'Player_Amendments.php' class = 'button'>Player Amendment Form</a><br></p>
         <p><br></p>
-        <p><a href = 'Form_Template.php' class = 'button'>Add New Player Form</a><br></p>
+        <p><a href = 'Team_Amendments.php' class = 'button'>Team Amendment Form</a><br></p>
         <p><br></p>
-        <p><a href = 'Form_Template.php' class = 'button'>Add New Team Form</a><br></p>
+        <p><a href = 'Game_Amendments.php' class = 'button'>Game Amendment Form</a><br></p>
         <p><br></p>
-        <p><a href = 'Form_Template.php' class = 'button'>Add New Games</a><br></p>
+        <p><a href = 'Tournament_Amendments.php' class = 'button'>Tournament Amendment Form</a><br></p>
         <p><br></p>
-        <p><a href = 'Form_Template.php' class = 'button'>Edit Stats</a><br></p>
+        <p><a href = 'PlayerStats_Amendments.php' class = 'button'>Player Stat Amendment Form</a><br></p>
         <p><br></p>
-        <p><a href = 'Form_Template.php' class = 'button'>Add New Tournament</a><br></p>
+        <p><a href = 'TeamStats_Amendments.php' class = 'button'>Team Stat Amendment Form</a><br></p>
         <p><br></p>
-        <p><a href = 'Form_Template.php' class = 'button'>Delete</a><br></p>
+<!--        <p><a href = 'Form_Template.php' class = 'button'>Delete</a><br></p>-->
 
     </div>
 </section>
