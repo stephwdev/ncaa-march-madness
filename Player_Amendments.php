@@ -52,3 +52,8 @@
 
     </div>
 </section>
+<section class="share">
+    <div class="share-wrap">
+        <p><a href = 'AdminPage.php' class = 'button'>Admin Main Page</a><br></p>
+    </div>
+</section>

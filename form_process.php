@@ -18,7 +18,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Team Stats</h2>
+        <h2 id="headline">Amendment Confirmation</h2>
 
     </div>
 </header>
@@ -88,5 +88,10 @@ if(isset($_POST['submit'])) {
 }
 
 ?>
+    </div>
+</section>
+<section class="share">
+    <div class="share-wrap">
+        <p><a href = 'AdminPage.php' class = 'button'>Admin Main Page</a><br></p>
     </div>
 </section>
