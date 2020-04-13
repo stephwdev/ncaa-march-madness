@@ -33,35 +33,39 @@
 
         $username = $_POST['username'];
         $password = $_POST['password'];
+        $loginSuccessful = false;
 
-//        $stmt = $db->prepare("SELECT Username FROM Users WHERE Username = :username");
-//
-//        $stmt->bindValue(':username', $username);
-//        $results = $stmt->execute();
-//
-//        $row = $results->fetchArray(SQLITE3_ASSOC);
-//
-//        echo "{$row[0]}";
+        $stmt = $db->prepare("SELECT Username FROM Users");
 
+        $stmt->bindValue(':username', $username);
+        $results = $stmt->execute();
 
+        while($row = $results->fetchArray(SQLITE3_ASSOC)) {
+            if($row['username'] == $username) {
+                $loginSuccessful = true;
+            }
+        }
 
+        if ($loginSuccessful == true) {
+            echo "<p><a href = 'Player_Amendments.php' class = 'button'>Player Amendment Form</a><br></p>";
+            echo "<p><br></p>";
+            echo "<p><a href = 'Team_Amendments.php' class = 'button'>Team Amendment Form</a><br></p>";
+            echo "<p><br></p>";
+            echo "<p><a href = 'Game_Amendments.php' class = 'button'>Game Amendment Form</a><br></p>";
+            echo "<p><br></p>";
+            echo "<p><a href = 'Tournament_Amendments.php' class = 'button'>Tournament Amendment Form</a><br></p>";
+            echo "<p><br></p>";
+            echo "<p><a href = 'PlayerStats_Amendments.php' class = 'button'>Player Stat Amendment Form</a><br></p>";
+            echo "<p><br></p>";
+            echo "<p><a href = 'TeamStats_Amendments.php' class = 'button'>Team Stat Amendment Form</a><br></p>";
+            echo "<p><br></p>";
+        } else {
+            echo "This user does not exist. Please try again.";
+            echo "<p><a href = 'LoginPage.php' class = 'button'>Return to Login Page</a><br></p>";
+        }
 
 
         ?>
-
-        <p><a href = 'Player_Amendments.php' class = 'button'>Player Amendment Form</a><br></p>
-        <p><br></p>
-        <p><a href = 'Team_Amendments.php' class = 'button'>Team Amendment Form</a><br></p>
-        <p><br></p>
-        <p><a href = 'Game_Amendments.php' class = 'button'>Game Amendment Form</a><br></p>
-        <p><br></p>
-        <p><a href = 'Tournament_Amendments.php' class = 'button'>Tournament Amendment Form</a><br></p>
-        <p><br></p>
-        <p><a href = 'PlayerStats_Amendments.php' class = 'button'>Player Stat Amendment Form</a><br></p>
-        <p><br></p>
-        <p><a href = 'TeamStats_Amendments.php' class = 'button'>Team Stat Amendment Form</a><br></p>
-        <p><br></p>
-<!--        <p><a href = 'Form_Template.php' class = 'button'>Delete</a><br></p>-->
 
     </div>
 </section>
