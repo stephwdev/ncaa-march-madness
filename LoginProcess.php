@@ -18,7 +18,7 @@
 <header class="hero">
     <div class="hero-wrap">
 
-        <h2 id="headline">Login Page</h2>
+        <h2 id="headline">Admin Page</h2>
 
 
 
@@ -29,16 +29,35 @@
     <div class="index">
 
 
-        <form action="LoginProcess.php" method="post">
+        <?php
 
-            <label for="username">Username</label>
-            <input type = "text" name = "username"><br>
-            <label for="password">Password</label>
-            <input type = "password" name = "password"><br>
-            <input type = "submit" name="submit" class="button">
+        $username = $_POST['username'];
+        $password = $_POST['password'];
+        $loginSuccessful = false;
 
-        </form>
+        $stmt = $db->prepare("SELECT Username FROM Users");
 
+        $stmt->bindValue(':username', $username);
+        $results = $stmt->execute();
+
+        while($row = $results->fetchArray(SQLITE3_ASSOC)) {
+            if($row['username'] == $username) {
+                $loginSuccessful = true;
+            }
+        }
+
+        if ($loginSuccessful == true) {
+            echo "Login successful";
+            echo "<p><a href = 'AdminPage.php' class = 'button'>Go to Admin Page</a><br></p>";
+            echo "<p><br></p>";
+
+        } else {
+            echo "This user does not exist. Please try again.";
+            echo "<p><a href = 'LoginPage.php' class = 'button'>Return to Login Page</a><br></p>";
+        }
+
+
+        ?>
 
     </div>
 </section>
@@ -50,5 +69,3 @@
 
     </div>
 </footer>
-
-
