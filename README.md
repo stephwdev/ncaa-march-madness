@@ -13,3 +13,7 @@ To run the code (on a Mac):
 1. Have all php files in the htdocs folder
 2. Fire up MAMP and start servers. This will launch the MAMP homepage
 3. Clone repo and navigate to http://localhost:8888/ncaa-march-madness/index.php
+
+### To-Do
+1. Clean up CSS / HTML
+
