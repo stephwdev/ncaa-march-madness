@@ -7,7 +7,7 @@ We were tasked with creating a relational database, which we chose SQLite for, a
 
 https://www.loom.com/share/97535167f931490cb91cdb80dfd28ded
 
-The template came from https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/
+The HTML/CSS template came from https://blog.codepen.io/2018/02/16/need-make-tournament-bracket/
 
 To run the code (on a Mac):
 1. Have all php files in the htdocs folder
