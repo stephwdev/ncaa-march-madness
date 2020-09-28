@@ -16,13 +16,10 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
-
-        <h2 id="headline">Admin Page</h2>
 
 
+    <h2 id="headline">Admin Page</h2>
 
-    </div>
 </header>
 
 <section id="bracket">

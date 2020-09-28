@@ -21,13 +21,8 @@ $playerID = $_GET['id'];
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
 
-        <h2 id="headline">Player Stats</h2>
-
-
-
-    </div>
+    <h2 id="headline">Player Stats</h2>
 </header>
 
 <section id="bracket">

@@ -16,13 +16,7 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
-
-        <h2 id="headline">Welcome!</h2>
-
-
-
-    </div>
+    <h2 id="headline">Welcome!</h2>
 </header>
 
 <section id="bracket">

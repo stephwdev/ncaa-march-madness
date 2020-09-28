@@ -16,13 +16,9 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
 
         <h2 id="headline">Login Page</h2>
 
-
-
-    </div>
 </header>
 
 <section id="bracket">

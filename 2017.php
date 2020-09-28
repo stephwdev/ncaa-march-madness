@@ -16,11 +16,8 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
 
-        <h1 id="headline">2017 Tournament</h1>
-
-    </div>
+        <h2 id="headline">2017 Tournament</h2>
 </header>
 
 

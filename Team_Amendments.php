@@ -16,11 +16,7 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
-
         <h2 id="headline">Table Amendment Form</h2>
-
-    </div>
 </header>
 
 <section id="bracket">

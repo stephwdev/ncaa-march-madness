@@ -17,18 +17,12 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
-
         <h2 id="headline">Team Stats</h2>
-
-
-
-    </div>
 </header>
 
-<section class="team-stats" id="bracket">
-    <div class="container">
-        <div class="split split-one">
+<section id="bracket">
+    <!-- <div class="container">
+        <div class="split split-one"> -->
 
             <table id="stats">
                 <tr>
@@ -63,17 +57,17 @@
             </table>
 
 
-        </div>
+        <!-- </div>
 
 
-    </div>
+    </div> -->
 </section>
 
 
 <section id="bracket">
     <div class="container">
-        <div class="split split-one">
-                    <div class = "split split-two">
+        <!-- <div class="split split-one"> -->
+                    <!-- <div class = "split split-two"> -->
 
                         <table id="stats">
                             <tr>
@@ -105,8 +99,8 @@
                             </tr>
                         </table>
 
-                    </div>
+                    <!-- </div> -->
 
-        </div>
+        <!-- </div> -->
     </div>
 </section>

@@ -16,11 +16,9 @@
 </head>
 <body>
 <header class="hero">
-    <div class="hero-wrap">
 
-        <h1 id="headline">2019 Tournament</h1>
+        <h2 id="headline">2019 Tournament</h2>
 
-    </div>
 </header>
 
 
