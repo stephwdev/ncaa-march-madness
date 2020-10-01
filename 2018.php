@@ -335,11 +335,11 @@
         </div>
     </div>
 </section>
-<section class="share">
+<footer class="share">
     <div class="share-wrap">
         <a href="2015.php">2015</a>
         <a href="2016.php">2016</a>
         <a href="2017.php">2017</a>
         <a href="2019.php">2019</a>
     </div>
-</section>
+</footer>
