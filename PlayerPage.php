@@ -36,7 +36,7 @@ $playerID = $_GET['id'];
         </div>
 
 
-            <table id="stats">
+            <table>
             <tr>
 
                 <th>Season</th>
