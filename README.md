@@ -15,6 +15,5 @@ To run the code (on a Mac):
 3. Clone repo and navigate to http://localhost:8888/ncaa-march-madness/index.php
 
 ### To-Do
-1. Fix CSS on Player Page (table no longer showing)
-2. Edit CSS to simplify formatting
+1. Edit CSS to simplify formatting
 
