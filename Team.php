@@ -21,8 +21,7 @@
 </header>
 
 <section id="bracket">
-    <!-- <div class="container">
-        <div class="split split-one"> -->
+
 
             <table id="stats">
                 <tr>
@@ -55,19 +54,12 @@
                     ?>
                 </tr>
             </table>
-
-
-        <!-- </div>
-
-
-    </div> -->
 </section>
 
 
 <section id="bracket">
     <div class="container">
-        <!-- <div class="split split-one"> -->
-                    <!-- <div class = "split split-two"> -->
+
 
                         <table id="stats">
                             <tr>
@@ -99,8 +91,6 @@
                             </tr>
                         </table>
 
-                    <!-- </div> -->
 
-        <!-- </div> -->
     </div>
 </section>

@@ -28,14 +28,16 @@ $playerID = $_GET['id'];
 <section id="bracket">
     <div class="container">
 
-        <div class="round-details"><?php
+        <div class="round-details">
+            <?php
 
             $nameResults = $db->query('SELECT * FROM Player WHERE PlayerID=' .$playerID);
             while ($row = $nameResults->fetchArray(SQLITE3_ASSOC)) {
                 echo "<h3>Player Name: {$row[FirstName]} {$row[LastName]}</h3>";
             }
 
-            ?><br/> </div>
+            ?><br/> 
+        </div>
 
         
             <table id="stats">
