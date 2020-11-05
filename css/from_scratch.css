@@ -47,3 +47,31 @@ a:visited {
 .footer-links:visited {
   color: white;
 }
+
+table {
+  border: 1px solid black;
+}
+
+/* Player Stats Page  */
+/* #stats {
+  border: 1px solid;
+  padding: 8px;
+  margin: 50px;
+}
+
+#stats tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#stats tr:hover {
+  background-color: #ddd;
+}
+
+#stats th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #2c7399;
+  color: white;
+  margin: 20px;
+} */

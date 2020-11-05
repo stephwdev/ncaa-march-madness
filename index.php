@@ -15,15 +15,15 @@
     <title>NCAA Tournament Bracket</title>
 </head>
 <body>
-<header class="hero">
+<header class="header">
     <h2 id="headline">Welcome!</h2>
 </header>
 
-<section id="bracket">
-    <div class="index">
+<section>
+    <div>
 
 
-        <h2 class="text-muted">How this site works</h2><br>
+        <h2>How this site works</h2><br>
 
         <p>This site is mainly used to gain information about the NCAA tournaments of the past. <br> We're hoping that this will help you with building your bracket in the future!
         <br> Click a year below to view that tournament's bracket.</p><br>

@@ -1,11 +1,7 @@
-<link rel="stylesheet" href="css/tournament.css">
+<link rel="stylesheet" href="css/from_scratch.css">
 <?php include "functions.php";
 $playerID = $_GET['id'];
 ?>
-
-
-
-
 
 <head>
     <meta charset="utf-8">
@@ -17,27 +13,29 @@ $playerID = $_GET['id'];
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Istok+Web|Roboto+Condensed:700' rel='stylesheet' type='text/css'>
 
-    <title>NCAA Tournament Bracket</title>
+    <title>Player Stats</title>
 </head>
 <body>
-<header class="hero">
+<header class="header">
 
     <h2 id="headline">Player Stats</h2>
 </header>
 
-<section id="bracket">
-    <div class="container">
+<section>
+    <!-- <div> -->
 
-        <div class="round-details"><?php
+        <div>
+            <?php
 
             $nameResults = $db->query('SELECT * FROM Player WHERE PlayerID=' .$playerID);
             while ($row = $nameResults->fetchArray(SQLITE3_ASSOC)) {
                 echo "<h3>Player Name: {$row[FirstName]} {$row[LastName]}</h3>";
             }
 
-            ?><br/> </div>
+            ?><br/> 
+        </div>
 
-        <ul class="matchup">
+
             <table id="stats">
             <tr>
 
@@ -71,11 +69,6 @@ $playerID = $_GET['id'];
                 ?>
             </tr>
         </table>
-        </ul>
 
-
-
-
-
-    </div>
+    <!-- </div> -->
 </section>
