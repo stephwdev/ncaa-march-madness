@@ -31,7 +31,7 @@ ul {
 }
 
 #stats tr:nth-child(even) {
-  background-color: whitesmoke;
+  background-color: lightgray;
 }
 
 #stats tr:hover {
