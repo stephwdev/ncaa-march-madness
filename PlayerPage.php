@@ -26,9 +26,9 @@ $playerID = $_GET['id'];
 </header>
 
 <section id="bracket">
-    <div>
+    <div class="container">
 
-        <div><?php
+        <div class="round-details"><?php
 
             $nameResults = $db->query('SELECT * FROM Player WHERE PlayerID=' .$playerID);
             while ($row = $nameResults->fetchArray(SQLITE3_ASSOC)) {
@@ -76,12 +76,6 @@ $playerID = $_GET['id'];
 
 
 
-
-    </div>
-</section>
-<section class="share">
-
-    <div class="share-wrap">
 
     </div>
 </section>
